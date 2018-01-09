@@ -1,0 +1,6 @@
+<table class="squareBoard">
+<tr ng-repeat="row in $ctrl.tiles track by $index">
+<td  ng-repeat="col in row track by $index" id="tile-{{col}}" ng-click="$ctrl.move($parent.$index,$index)" title="{{col}}">{{col}}</td>
+</tr>
+</table></br>
+<button ng-click="$ctrl.solve" >Solved</button>
